@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyFlashcard</string>
+    <string name="send_to">Send to...</string>
+
+</resources>

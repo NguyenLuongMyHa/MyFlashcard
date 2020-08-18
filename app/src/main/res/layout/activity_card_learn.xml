@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_card_learn_activity"
+    tools:context=".CardLearnActivity">
+
+    <com.daprlabs.cardstack.SwipeFrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.daprlabs.cardstack.SwipeDeck
+            android:id="@+id/swipe_cards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/border_round_corner_10dp"
+            android:padding="20dp"
+            app:card_spacing="10dp"
+            app:max_visible="4"
+            app:render_above="true"
+            app:rotation_degrees="15" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <ru.katso.livebutton.LiveButton
+                android:id="@+id/btn_replay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="  RESTART"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:backgroundColor="@color/colorSecondary"
+                app:corners="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:normalHeight="6dp"
+                app:pressedHeight="4dp"
+                app:shadowColor="@color/colorSecondaryDark" />
+
+            <ru.katso.livebutton.LiveButton
+                android:id="@+id/btn_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="  NO"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:backgroundColor="#F57F76"
+                app:corners="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_yes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:normalHeight="6dp"
+                app:pressedHeight="4dp"
+                app:shadowColor="#b16262" />
+
+            <ru.katso.livebutton.LiveButton
+                android:id="@+id/btn_yes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="  YES"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:backgroundColor="@color/colorSecondary"
+                app:corners="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_no"
+                app:normalHeight="6dp"
+                app:pressedHeight="4dp"
+                app:shadowColor="@color/colorSecondaryDark" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.daprlabs.cardstack.SwipeFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

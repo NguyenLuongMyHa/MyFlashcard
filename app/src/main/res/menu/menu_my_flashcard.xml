@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_import"
+        android:title="Import"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_custom_display"
+        android:title="Custom Display"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_learn_with_card"
+        android:title="Learn With Card"
+        app:showAsAction="never" />
+
+</menu>
